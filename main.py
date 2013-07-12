@@ -22,3 +22,4 @@ if intro.upper() == "LEAVE":
 		print hall1.left
 	if introleave.upper() == "CONTINUE":
 		print hall1.cont	
+
