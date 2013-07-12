@@ -2,7 +2,7 @@ import player
 import monster3
 import random
 
-print "BATTLE TEST\n------------------\nAttacks: %s and %s" % (player.attack1, player.attack2)
+print "BATTLE 3\n------------------\nAttacks: %s and %s" % (player.attack1, player.attack2)
 
 
 while player.hp >= 1 and monster3.hp >= 1:
