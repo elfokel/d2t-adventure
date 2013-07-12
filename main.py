@@ -1,3 +1,5 @@
+#MAIN ADVENTURE FILE
+
 import random, battlecheck
 
 print "You wake up in room."
