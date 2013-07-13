@@ -1,4 +1,4 @@
-#MAIN ADVENTURE FILE
+#MAIN ADVENTURE FILE!
 
 import random, battlecheck, player
 
