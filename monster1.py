@@ -1,6 +1,6 @@
 # MONSTER 1 ATTRIBUTES
 
-monstername = "Abe"
+monsternam = "Abe"
 hp = 5
 attack1 = "CLAW"
 attack2 = "TAIL"

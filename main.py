@@ -4,7 +4,7 @@ import random, player
 
 # Adventure Starts
 print "You wake up in room."
-start = raw_input("What would you like to do?\nOptions:\n1. Check\n2. Leave\n>")
+start = raw_input("What would you like to do?\nOptions:\n1. Check\n2. Leave\n> ")
 if start.upper() == "CHECK":
 	print "You see the room. You find nothing. You leave the room."
 
