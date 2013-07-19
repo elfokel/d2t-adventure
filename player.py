@@ -2,8 +2,7 @@
 
 name = "Luis"
 hp = 20
-attack1 = "KNIFE"
-attack2 = "PUNCH"
-miss = "MISS"
-attack1dmg = 2
-attack2dmg = 1
+attack1 = "PUNCH"
+attack2 = "KNIFE"
+attack1dmg = 1
+attack2dmg = 2

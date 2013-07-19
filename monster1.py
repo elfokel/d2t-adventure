@@ -1,9 +1,8 @@
 # MONSTER 1 ATTRIBUTES
 
 monsternam = "Abe"
-hp = 5
+hp = 10
 attack1 = "CLAW"
 attack2 = "TAIL"
-miss = "MISS"
 attack1dmg = 1
 attack2dmg = 2

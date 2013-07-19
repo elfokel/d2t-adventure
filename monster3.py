@@ -1,9 +1,8 @@
 # MONSTER 3 ATTRIBUTES
 
-monstername = "Jeff"
-hp = 5
-attack1 = "CLAW"
-attack2 = "TAIL"
-miss = "MISS"
+monsternam = "Jeff"
+hp = 10
+attack1 = "MERGICK MYSIl"
+attack2 = "FIREBALL"
 attack1dmg = 1
 attack2dmg = 2

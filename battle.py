@@ -1,4 +1,4 @@
-def battle(playerhp, playeratk1, playeratk2, playeratk1dmg, playeratk2dmg, monstername, monsterhp, monsteratk1, monsteratk2, monsteratk1dmg, monsteratk2dmg):
+def battlefunc(playerhp, playeratk1, playeratk2, playeratk1dmg, playeratk2dmg, monstername, monsterhp, monsteratk1, monsteratk2, monsteratk1dmg, monsteratk2dmg):
 	import random
 	while playerhp >= 1 and monsterhp >= 1:
 		enterattack = raw_input("Enter attack\n> ")
