@@ -2,7 +2,9 @@
 
 name = "Luis"
 hp = 20
-attack1 = "PUNCH"
-attack2 = ""
-attack1dmg = 1
-attack2dmg = ""
+weapon1 = "PUNCH"
+weapon2 = ""
+weapon1dmg = 1
+weapon2dmg = ""
+hitlist1 = ["hit"]
+hitlist2 = ""
