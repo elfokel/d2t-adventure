@@ -1,6 +1,12 @@
-from battle import battle, weaponhitlist
+from func import battle, weaponhitlist, slide
 import player, monster1, monster2, monster3
 import random
+import sys, pygame, time
+
+pygame.init()
+slide([800, 600], "images/slide1.png")
+slide([800, 600], "images/slide2.png")
+pygame.quit()
 
 #Adventure starts here####
 
@@ -25,11 +31,11 @@ else:
 		if weapon.upper() == '2':
 			player.weapon2 = 'FIRESTICK'
 			player.weapon2dmg = 5
-			player.hitlist2 = battle.weaponhitlist(5)
+			player.hitlist2 = weaponhitlist(5)
 		if weapon.upper() == '3':
 			player.weapon2 = 'M16'
 			player.weapon2dmg = 10
-			player.hitlist2 = battle.weaponhitlist(10)	  
+			player.hitlist2 = weaponhitlist(10)	  
 
 	########## MONSTER BATTLE SELECTION ############
 		monsters = [monster1, monster2, monster3]
