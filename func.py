@@ -1,15 +1,12 @@
-import random
-import player, monster1, monster2, monster3
-import sys, pygame, time
+import pygame, time, random
 
-def slide(imagesize, image):
-	#size = imagesize
+def slide(imagesize, image, timer):
 	screen = pygame.display.set_mode((imagesize))
 	bg = pygame.image.load(image)
 	bgrect = bg.get_rect()
 	screen.blit(bg, bgrect)
 	pygame.display.flip()
-	time.sleep(3)
+	time.sleep(timer)
 
 def weaponhitlist(n):
 	miss = ['miss']
@@ -54,4 +51,3 @@ def battle(player, monster):
 		if monster.hp < 1:
 			print 'You have defeated %s' % (monster.name)
 			player.hp = 20
-

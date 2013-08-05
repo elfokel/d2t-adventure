@@ -4,16 +4,16 @@ import random
 import sys, pygame, time
 
 pygame.init()
-slide([800, 600], "images/slide1.png")
-slide([800, 600], "images/slide2.png")
+slide([800, 600], "images/slide1.png", 1)
+slide([800, 600], "images/slide2.png", 1)
 pygame.quit()
 
 #Adventure starts here####
 
-print 'You wake up in room.'
-playername = raw_input('What is your name? ')
-playername = player.name
-start = raw_input('What would you like to do?\nOptions:\n1. Check\n2. Leave\n> ')
+print 'Adventure starts!'
+#playername = raw_input('What is your name? ')
+#playername = player.name
+start = raw_input('You wake up in a room. What would you like to do?\nOptions:\n1. Check\n2. Leave\n> ')
 
 while start.upper() not in ('CHECK', 'LEAVE'):
 	print 'Command not recognized!'
@@ -21,7 +21,7 @@ while start.upper() not in ('CHECK', 'LEAVE'):
 else:
 	if start.upper() == 'CHECK':
 		weapon = raw_input('You have found some weapons!. You may only pick one since you are too much of a weakling to carry two.\n1. Longsword - Damage: 3, Hit Chance: 50%\n2. Firestick - Damage: 5, Hit Chance: 33%\n3. M16 - Damage: 10, Hit Chance: 10%\n> ')
-		while weapon.upper() not in ['1', '2', '3']:
+		while weapon not in ['1', '2', '3']:
 			print 'That is not one of the weapons!'
 			weapon = raw_input('You have found some weapons!. You may only pick one since you are too much of a weakling to carry two.\n1. Longsword - Damage: 3, Hit Chance: 50%\n2. Firestick - Damage: 5, Hit Chance: 33%\n3. M16 - Damage: 10, Hit Chance: 10%\n> ')
 		if weapon.upper() == '1':
@@ -41,7 +41,6 @@ else:
 		monsters = [monster1, monster2, monster3]
 		while monsters:
 			monster = random.choice(monsters)
-			print monster.name
 			battle(player, monster)
 			monsters.remove(monster)
 
@@ -54,5 +53,4 @@ else:
 			print monster.name
 			battle(player, monster)
 			monsters.remove(monster)
-			print monsters		
-		
+			print monsters
