@@ -1,6 +1,10 @@
 # MONSTER 2 ATTRIBUTES
 
 name = "Aaron"
+intro = "Aaron bursts into the room!"
+mono = "You are nothing to me!"
+taunt1 = "Come get some!"
+taunt2 = "Weakling, pathetic!"
 hp = 10
 weapon1 = "FIST"
 weapon2 = "CLAW"

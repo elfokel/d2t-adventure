@@ -1,14 +1,20 @@
 from func import battle, weaponhitlist, slide
 import player, monster1, monster2, monster3
-import random
-import sys, pygame, time
+import random, pygame, time
 
-pygame.init()
-slide([800, 600], "images/slide1.png", 1)
-slide([800, 600], "images/slide2.png", 1)
-pygame.quit()
+#pygame.init()
+#slide([800, 600], "images/slide1.png", 1)
+#slide([800, 600], "images/slide2.png", 1)
+#pygame.quit()
 
-#Adventure starts here####
+#Adventure starts here
+
+print "A long time ago stuff happened!"
+time.sleep(3)
+print "Then stuff happened after that"
+time.sleep(3)
+print "Now this stuff will happen"
+time.sleep(3)
 
 print 'Adventure starts!'
 #playername = raw_input('What is your name? ')

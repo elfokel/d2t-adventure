@@ -1,6 +1,10 @@
 # MONSTER 1 ATTRIBUTES
 
 name = "Abe"
+intro = "The floor beneath you crumbles, you start fighting Abe!"
+mono = "You will die!"
+taunt1 = "Get back!"
+taunt2 = "Run away!"
 hp = 10
 weapon1 = "CLAW"
 weapon2 = "TAIL"

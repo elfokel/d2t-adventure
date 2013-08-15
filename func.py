@@ -1,5 +1,9 @@
 import pygame, time, random
 
+#def taunt(monster):
+	#rantaunt = random.choice(monster.taunt1, monster.taunt2)
+	#print rantaunt
+
 def slide(imagesize, image, timer):
 	screen = pygame.display.set_mode((imagesize))
 	bg = pygame.image.load(image)
@@ -21,6 +25,8 @@ def attack(player, monster, playerhitlist, playerweapon, playerweapondmg):
 		print '%s takes %s damage' % (monster.name, str(playerweapondmg))
 	if randomizer == 'miss':
 		print 'You missed!'
+	rantaunt = random.choice([monster.taunt1, monster.taunt2])
+	print '%s says: %s' % (monster.name, rantaunt) 
 	randomizer = random.choice(monster.hitlist)
 	if randomizer == 'hit1':
 		player.hp = player.hp - monster.weapon1dmg
@@ -32,6 +38,8 @@ def attack(player, monster, playerhitlist, playerweapon, playerweapondmg):
 		print '%s did not hit you' % monster.name 
 
 def battle(player, monster):
+	print monster.intro
+	print monster.mono
 	#####START BATTLE######
 	while player.hp >= 1 and monster.hp >= 1:
 		enterweapon = raw_input('Enter weapon\n> ')
