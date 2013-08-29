@@ -16,9 +16,8 @@ import random, pygame, time
 #print "Now this stuff will happen"
 #time.sleep(3)
 
-#print 'Adventure starts!'
-#playername = raw_input('What is your name? ')
-#playername = player.name
+print 'Adventure starts!'
+player.name = raw_input('What is your name? ')
 start = raw_input('You wake up in a room. What would you like to do?\nOptions:\n1. Check\n2. Leave\n> ')
 
 while start.upper() not in ('CHECK', 'LEAVE'):
@@ -26,9 +25,10 @@ while start.upper() not in ('CHECK', 'LEAVE'):
 	start = raw_input('>')
 else:
 	if start.upper() == 'CHECK':
-		weapon = raw_input('You have found some weapons!. You may only pick one since you are too much of a weakling to carry two.\n-------------------------------------------\n-  Weapon    -   Damage  -    Hit Chance  -\n-------------------------------------------\n- Longsword  -     3     -       50%      -\n- Firestaff -     5     -       33%      -\n-    M16     -    10     -       10%      -\n-------------------------------------------\n\nEnter weapon name to pick it up.\n>')
+		raw_input('You have found some weapons!. Pick only one since you are too much of a weakling to carry two.')
+		weapon = raw_input('\n-------------------------------------------\n-  Weapon    -   Damage  -    Hit Chance  -\n-------------------------------------------\n- Longsword  -     3     -       50%      -\n- Firestaff  -     5     -       33%      -\n-    M16     -    10     -       10%      -\n-------------------------------------------\n\nEnter weapon name to pick it up.\n>')
 		while weapon.upper() not in ['LONGSWORD', 'FIRESTAFF', 'M16']:
-			print 'That is not one of the weapons! Try again.'
+			print 'That is not a weapon! Try again.'
 			weapon = raw_input('>')
 		if weapon.upper() == 'LONGSWORD':
 			player.weapon2 = 'LONGSWORD'
@@ -42,7 +42,6 @@ else:
 			player.weapon2 = 'M16'
 			player.weapon2dmg = 10
 			player.hitlist2 = weaponhitlist(10)	  
-
 	########## MONSTER BATTLE SELECTION ############
 		monsters = [monster1, monster2, monster3]
 		while monsters:

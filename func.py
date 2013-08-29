@@ -1,9 +1,5 @@
 import pygame, time, random
 
-#def taunt(monster):
-	#rantaunt = random.choice(monster.taunt1, monster.taunt2)
-	#print rantaunt
-
 def slide(imagesize, image, timer):
 	screen = pygame.display.set_mode((imagesize))
 	bg = pygame.image.load(image)
@@ -13,9 +9,9 @@ def slide(imagesize, image, timer):
 	time.sleep(timer)
 
 def weaponhitlist(n):
-	miss = ['miss']
-	hit = ['hit']
-	result = hit + (miss*(n-1))
+	miss = 'miss'
+	hit = 'hit'
+	result = [hit] + [(miss*(n-1))]
 	return result
 
 def attack(player, monster, playerhitlist, playerweapon, playerweapondmg):
@@ -42,9 +38,9 @@ def battle(player, monster):
 	print monster.mono
 	#####START BATTLE######
 	while player.hp >= 1 and monster.hp >= 1:
-		enterweapon = raw_input('Enter weapon\n> ')
+		enterweapon = raw_input('Enter weapon to attack with.\nYou have:\n%s\n%s\n>' % (player.weapon1, player.weapon2))
 		#####COMMAND IS NOT RECOGNIZED#####
-		if enterweapon.upper() not in [player.weapon1 , player.weapon2]:
+		if enterweapon.upper() not in [player.weapon1, player.weapon2]:
 			print 'Weapon not recognized'
 		#####IF PLAYER IS ATTACKING WITH WEAPON 1#####
 		if enterweapon.upper() == player.weapon1:
