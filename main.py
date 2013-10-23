@@ -7,7 +7,7 @@ slide([800, 600], "images/slide1.png", 1)
 slide([800, 600], "images/slide2.png", 1)
 pygame.quit()
 
-Adventure starts here
+#Adventure starts here
 
 print "A long time ago stuff happened!"
 time.sleep(3)
