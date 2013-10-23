@@ -25,7 +25,7 @@ while start.upper() not in ('CHECK', 'LEAVE'):
 	start = raw_input('>')
 else:
 	if start.upper() == 'CHECK':
-		raw_input('You have found some weapons!. Pick only one since you are too much of a weakling to carry two.')
+		print 'You have found some weapons!. Pick only one since you are too much of a weakling to carry two.'
 		weapon = raw_input('\n-------------------------------------------\n-  Weapon    -   Damage  -    Hit Chance  -\n-------------------------------------------\n- Longsword  -     3     -       50%      -\n- Firestaff  -     5     -       33%      -\n-    M16     -    10     -       10%      -\n-------------------------------------------\n\nEnter weapon name to pick it up.\n>')
 		while weapon.upper() not in ['LONGSWORD', 'FIRESTAFF', 'M16']:
 			print 'That is not a weapon! Try again.'
